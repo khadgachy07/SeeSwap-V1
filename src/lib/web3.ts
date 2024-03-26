@@ -21,7 +21,7 @@ export async function fetchTradeData(
     const contract = new web3.eth.Contract(pairABI, pairAddress);
     const tradeInfo: TradeData[] = [];
     const latestBlockNumber = await web3.eth.getBlockNumber();
-
+//@ts-ignore
     const events = await contract.getPastEvents("Swap", {
       fromBlock: Number(latestBlockNumber) - 15000,
       toBlock: latestBlockNumber,
