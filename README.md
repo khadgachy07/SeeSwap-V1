@@ -38,16 +38,13 @@ To get started with SeeSwap, follow these steps:
     ```bash
     npm install
     ```
-3. Set up an account with Alchemy and create a WebSocket URL.
-4. Update the `.env` file with the WebSocket URL:
-    ```bash
-    ALCHEMY_WEBSOCKET_URL=wss://eth-mainnet.alchemyapi.io/v2/[your-alchemy-api-key]
-    ```
-5. Start the development server:
+3. Start the development server:
     ```bash
     npm run dev
     ```
-6. Open the app in a web browser at [http://localhost:3000](http://localhost:3000).
+4. Open the app in a web browser at [http://localhost:3000](http://localhost:3000).
 
 ## Conclusion
 SeeSwap is a Next.js app for analyzing trade data from the Uniswap decentralized exchange platform. The app provides real-time updates to trade data, a custom React hook for fetching trade data from the Ethereum blockchain, and a simple and easy-to-use interface for accessing and analyzing trade data. Whether you are a trader, researcher, or developer, SeeSwap is a powerful tool for accessing and analyzing trade data from the Ethereum blockchain.
+## Note
+Currently, the Alchemy WebSocket URL is hardcoded in the useFetchTradeData hook. In the future, it is planned to move this configuration to a .env file to allow for easier configuration and deployment.
