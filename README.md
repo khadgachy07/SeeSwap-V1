@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+SeeSwap: A Next.js App for Analyzing Trade Data from the Uniswap Decentralized Exchange
+Introduction
+SeeSwap is a Next.js app for analyzing trade data from the Uniswap decentralized exchange platform. The app uses the Web3.js library to connect to the Ethereum blockchain and fetch trade data in real-time, providing real-time updates to the trade data. SeeSwap is designed to be a powerful tool for traders, researchers, and developers, providing a reliable and easy-to-use interface for accessing and analyzing trade data from the Ethereum blockchain.
 
-## Getting Started
+Features
+Real-time updates to the trade data using the WebSocket of Alchemy.
+A custom React hook, useFetchTradeData, for fetching trade data from the Ethereum blockchain.
+A TradeData type for defining the structure of the trade data.
+A TradeTable component for displaying the trade data in a table format.
+Technical Details
+SeeSwap is a Next.js app built using the following technologies:
 
-First, run the development server:
+TypeScript: A typed superset of JavaScript for better code readability and maintainability.
+Next.js: A framework for building server-side rendered React applications.
+Web3.js: A JavaScript library for interacting with the Ethereum blockchain.
+Alchemy WebSocket: A WebSocket provider for connecting to the Ethereum blockchain.
+The app is structured as follows:
 
-```bash
+TypeScript:
+The @types/react and @types/react-dom packages are added to provide TypeScript typings for React.
+The trade-data.ts file defines the TradeData type and other types used in the app.
+Next.js:
+The pages directory is used to define the routes of the app.
+The index.tsx file in the pages directory is the entry point of the app.
+Web3.js:
+The Web3 library is used to connect to the Ethereum blockchain.
+The WebSocket provider of Alchemy is used to listen for real-time updates to the trade data.
+Getting Started
+To get started with SeeSwap, follow these steps:
+
+Clone the repository:
+Copy code
+git clone <https://github.com/[username]/seeswap.git>
+cd seeswap
+Install the dependencies:
+Copy code
+npm install
+Set up an account with Alchemy and create a WebSocket URL.
+
+Update the .env file with the WebSocket URL:
+
+Copy code
+ALCHEMY_WEBSOCKET_URL=wss://eth-mainnet.alchemyapi.io/v2/[your-alchemy-api-key]
+Start the development server:
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open the app in a web browser at <http://localhost:3000>.
+Conclusion
+SeeSwap is a Next.js app for analyzing trade data from the Uniswap decentralized exchange platform. The app provides real-time updates to the trade data, a custom React hook for fetching the trade data from the Ethereum blockchain, and a simple and easy-to-use interface for accessing and analyzing trade data. Whether you are a trader, researcher, or developer, SeeSwap is a powerful tool for accessing and analyzing trade data from the Ethereum blockchain.
