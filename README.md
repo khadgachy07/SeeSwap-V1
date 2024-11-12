@@ -31,7 +31,7 @@ The app is structured as follows:
 To get started with SeeSwap, follow these steps:
 1. Clone the repository:
     ```bash
-    git clone <https://github.com/[username]/seeswap.git>
+    git clone <https://github.com/khadgachy07/seeswap.git>
     cd seeswap
     ```
 2. Install the dependencies:
